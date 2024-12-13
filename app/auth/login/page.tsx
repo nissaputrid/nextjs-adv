@@ -39,7 +39,7 @@ export default function Page(){
                     setError(result.error)
                 }
             }else if (!requires2FA){
-                router.push('/login')
+                router.push('/auth/login')
             }
         } catch (error) {
             setError('Terjadi kesalahan.')

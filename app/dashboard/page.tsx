@@ -9,7 +9,7 @@ export default async function Page(){
     const session = await getServerSession(authOptions)
 
     if (!session){
-        redirect("auth/login")
+        redirect("/auth/login")
     }
 
     const news = await prisma.news.findMany({
