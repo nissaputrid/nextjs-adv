@@ -3,6 +3,7 @@
 import { useState, React } from "react";
 import { useRouter, redirect } from 'next/navigation';
 import { signIn, useSession } from 'next-auth/react';
+import '../../global.css';
 
 
 export default function Page(){

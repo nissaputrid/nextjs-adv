@@ -2,6 +2,7 @@ import { getSession } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import Link from 'next/link';
 import LogoutButton from '@/components/logout-button';
+import '../../global.css';
 
 export default async function Page(){
     const session = await getSession()

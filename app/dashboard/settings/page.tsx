@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import '../../global.css';
 
 export default function Page(){
     const [qrCode, setQrcode] = useState('')
